@@ -1,1 +1,50 @@
-/*  your css code here. If applicable */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  
+}
+
+.container {
+    text-align: center;
+    border: 1px solid black;
+	width: 600px;
+	height: 300px;
+	border-radius: 0.4em;
+}
+
+.code-container {
+  display: inline-block;
+}
+
+.code {
+  width: 60px;
+  height: 70px;
+  margin: 0 5px;
+  text-align: center;
+  font-size: 1.5em;
+  border: 1px solid #b4b6b8;
+}
+
+#verification_heading {
+  padding-top: 15px;
+  font-size: 18px;
+}
+
+#verification_subtext {
+  font-size: 12px;
+  color: black;
+  padding-bottom: 20px;
+  
+}
+
+.text-container {
+	background-color: #f0f0f0;
+	font-size: 12px;
+	text-decoration-color: #cfd9df;
+}
