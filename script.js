@@ -1,4 +1,3 @@
-//your JS code here. If required.
 document.addEventListener("DOMContentLoaded", function() {
   const inputs = document.querySelectorAll('.code');
 
@@ -7,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.addEventListener('input', function(event) {
       const value = event.target.value;
       if (value.length === 1 && index < inputs.length - 1) {
-        inputs[index + 1].focus();
+        inputs[index + 1].click(); // Manually trigger focus by clicking on the next input
       }
     });
 
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.addEventListener('keydown', function(event) {
       if (event.key === 'Backspace' && index > 0) {
         if (input.value === '') {
-          inputs[index - 1].focus();
+          inputs[index - 1].click(); // Manually trigger focus by clicking on the previous input
         }
       }
     });
