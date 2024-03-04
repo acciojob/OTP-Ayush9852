@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.addEventListener('input', function(event) {
       const value = event.target.value;
       if (value.length === 1 && index < inputs.length - 1) {
-        inputs[index + 1].click(); // Manually trigger focus by clicking on the next input
+        inputs[index + 1].focus(); // Manually trigger focus on the next input
       }
     });
 
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     input.addEventListener('keydown', function(event) {
       if (event.key === 'Backspace' && index > 0) {
         if (input.value === '') {
-          inputs[index - 1].click(); // Manually trigger focus by clicking on the previous input
+          inputs[index - 1].focus(); // Manually trigger focus on the previous input
         }
       }
     });
